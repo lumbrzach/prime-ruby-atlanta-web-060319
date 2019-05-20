@@ -1,8 +1,10 @@
 # Add  code here!
 def prime?(num)
-    if num % i == 0
-      range = 2..(num-1)
-      range_array = range.to_a
+  range = (2..(num-1)).to_a
+  if num > 1
+    range.none? do |i|
+      num % i == 0
       return false
-    end
+    else true
+  end
 end
