@@ -4,8 +4,7 @@ def prime?(num)
     range = (2..(num-1)).to_a
     range.none? do |i|
       num % i == 0
-      return false
     end
-  else true
+  else false
   end
 end
