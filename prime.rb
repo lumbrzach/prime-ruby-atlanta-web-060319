@@ -1,8 +1,7 @@
 # Add  code here!
 def prime?(num)
-  for i in 2..(num-1)
+  range = (2..(num-1)).to_a
     if num % i == 0
       return false
     end
-  end
 end
