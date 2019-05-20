@@ -4,8 +4,8 @@ def prime?(num)
   if num > 1
     range.none? do |i|
       num % i == 0
-      return false
+      return true
     end
-    else true
+  else false
   end
 end
